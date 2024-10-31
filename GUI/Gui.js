@@ -6477,6 +6477,7 @@
                                     }));
                                     break;
                                 case "gold":
+                                case "candy":
                                     for (let $ in h) h[$].tat?.split && ([i, n] = h[$].tat.split(":"), "swap" == n ? this.addAlert($, t[r[$].b]?.url, "just swapped with " + i) : this.addAlert($, t[r[$].b]?.url, `just took ${this.parseNumber(parseInt(n))} gold from ` + i));
                                     m = Object.entries(r).map(([e, {
                                         b: t,
