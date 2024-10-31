@@ -1205,20 +1205,19 @@
                         credentials: "include",
                         method: "POST"
                     }).then(e => e.json());
-                    let {inGameName:a} = await fetch("https://play.blooket.com/api/playersessions/landings", {
+                    await fetch("https://play.blooket.com/api/playersessions/landings", {
                         body: JSON.stringify({
                             t
                         }),
                         credentials: "include",
                         method: "POST"
-                    }).then(e=>e.json()); await fetch("https://play.blooket.com/api/playersessions/questions?t=" + t, {
+                    }); await fetch("https://play.blooket.com/api/playersessions/questions?t=" + t, {
                         credentials: "include"
                     });
                     await fetch("https://play.blooket.com/api/users/factorystats", {
                         body: JSON.stringify({
                             blookUsed: "Chick",
                             t,
-                            name: a,
                             cash: Math.floor(9e7 * Math.random()) + 1e7,
                             correctAnswers: Math.floor(500 * Math.random()) + 500,
                             upgrades: Math.floor(300 * Math.random()) + 300,
