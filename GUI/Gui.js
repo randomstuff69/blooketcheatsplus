@@ -4,7 +4,7 @@
     window.fetch.call = function() {
         if (!arguments[1].includes("s.blooket.com/rc")) return wfcall.apply(this, arguments);
     }
-    if (console.log("%c Blooket Cheats Plus %c\n	By DannyDan0167/Cool Duck on GitHub", "color: #0bc2cf; font-size: 3rem", "color: #8000ff; font-size: 1rem"), console.log("%c	gui.js", "color: #0bc2cf; font-size: 1rem"), console.log("%c	Star the github repo!%c  https://github.com/randomstuff69/blooketpluscheats", "color: #ffd000; font-size: 1rem", ""), document.querySelector("script[src*='bfs/index.js']") && !window.clearId) {
+    if (console.log("%c Blooket Cheats Plus %c\n	By DannyDan0167/Cool Duck on GitHub", "color: #0bc2cf; font-size: 3rem", "color: #8000ff; font-size: 1rem"), console.log("%c	gui.js", "color: #0bc2cf; font-size: 1rem"), console.log("%c	Star the github repo!%c  https://github.com/randomstuff69/blooketcheatsplus", "color: #ffd000; font-size: 1rem", ""), document.querySelector("script[src*='bfs/index.js']") && !window.clearId) {
         for (var e, t, a, o, r, i, n, s, e = document.createElement("iframe"), t = (document.body.appendChild(e), window.clearId = window.setInterval(() => {}, 0)); t--;) e.contentWindow.clearInterval.call(window, t);
         e.remove()
     }
@@ -1071,30 +1071,6 @@
                     path: `c/${t.client.name}/b`,
                     val: e
                 })
-            }
-        }, {
-            name: "Set Custom Blook URL",
-            description: "Sets a custom image as your blook.",
-            inputs: [{
-                name: "URL",
-                type: "input",
-            }],
-            run: function(e) {
-			let i = document.createElement('iframe');
-            document.body.append(i);
-            const alert = i.contentWindow.alert.bind(window);
-            i.remove();
-			if(!e.startsWith("http")){alert("URL must be http or https!");return;}
-                let t = Object.values(function e(t = document.querySelector("body>div")) {
-                    return Object.values(t)[1]?.children?.[0]?._owner.stateNode ? t : e(t.querySelector(":scope>div"));
-                }())[1].children[0]._owner.stateNode;
-                if (!t.state.unlocks) {
-                    t.props.client.blook = e;
-                }
-                t.props.liveGameController.setVal({
-                    path: `c/${t.props.client.name}/b`,
-                    val: e
-                });
             }
         }, {
             name: "Set Blook Ad Text",
