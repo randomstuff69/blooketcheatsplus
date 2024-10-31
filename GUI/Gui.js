@@ -1193,38 +1193,30 @@
             name: "Get Daily Rewards",
             description: "Gets max daily tokens and xp",
             run: async function() {
-                let e = document.createElement("iframe");
+                 let e = document.createElement("iframe");
                 if (document.body.append(e), window.alert = e.contentWindow.alert.bind(window), e.remove(), location.href.includes("play.blooket.com")) {
                     let {
                         t
                     } = await fetch("https://play.blooket.com/api/playersessions/solo", {
                         body: JSON.stringify({
                             gameMode: "Factory",
-                            questionSetId: ["5fac96fe2ca0da00042b018f", "66702d024ec37ac03062cc06", "600b1491d42a140004d5215a", "65d4810a8a408800b6449e57", "5fac96fe2ca0da00042b018f", "615e9cd727d0720066bcf638", "5fac96fe2ca0da00042b018f", "600b1491d42a140004d5215a", "63ee6c1fbd7c007948b2f986", "65d8de5bd25f9bd49916d855", "600b14d8d42a140004d52165", "6352e93608ea4ee9d0a5fe7f", "64cd1b99ff6f69f3025fc25a", "600b1491d42a140004d5215a", "5db75fa3f1fa190017b61c0c", "65fb6005f986c984060ed92c", "65e88b461a39195a37309c57", "60cc9f943f191b00230ae2a2", "61f5484186dade0979280d54", "664418e736bd1bf1890b2dae", "640a7d9bde68f5243d403977", "66256e6b861ee38a258b8b61", "65119f1fba0bb577d186df8e", "661d7540a452254baf51b1dd", "65ff17a207a715061a6249e6", "61c3570ad8f92ff303ee4733", "63efbff8e2b70e8a1bb1a583", "644a30c06dd4d2c2c5c9c6ae", "66461ff5c671f7c7db225cb3", "664777444be95fa91fc9a4ee", "6425e5e052b1ba5ae2cb07a2", "612e2aad654d48002a4f384d", "6548ffabcbe542c105812e64", "666092337e18e9b7b044e6c8", "6277e6ca21e2151edc435c53", "6268270201c2a958b75af1cf", "61aa4f9c190f70ceda79cf92", "6680e522559ac110b3c6ef28", "6657d986e92bbd481c12a6e8", "61d877c1910d317630b69e02", "618e5d8b7242bec7572b53ca", "656d4a2ac3bc01302555bfbd", "61d7463d2250de5603ad8ba1", "6650bd7a87c4bb5302d69c08", "61b1fdb09a3347d1a298157b", "60b632ff2089ea0028d26fc8", "5fdcacc85d465a0004b021b9", "665e3161785c8a4e8853f995", "61b9d07a7a1e178d18ccd903", "6624a2cd861ee38a258b814d", "650b3ccd54b65594ff99e620", "61b2a39895bd185869e3844e", "6581df4af27a6029a933d954", "641eecaec2e1181b54481588", "668ce3d2eb8513f5ed4c79c1", "5fac96fe2ca0da00042b018f", "6192afff6cb94db501ecc7d5", "600b14d8d42a140004d52165", "665898ae99eca64187ffe7df", "5fe3d085a529560004cd3076", "64fb8fbfdbeffc06f36f8f5f", "654e79558169fc618f544ac7", "628d24107ffc913af879c58a", "617041e0e97439003084cb25", "6408cc2a52d433570018126b", "663c5686d93c1e441547529f", "666c3d24c9e069d6094bbcce", "6548ffabcbe542c105812e64", "663d4766d93c1e4415476a9d", "5f88953cdb209e00046522c7", "64fcec87be8604702a6e0559", "614b2b3747e4cd002c3c0e35", "600b14d8d42a140004d52165", "63640a18c5370a98f00349b1", "6690e0ec559ac110b3c7b4dd", "664644bd7ea36b003839459c", "600b153ad42a140004d52172", "63e638d8db4486e546547014", "61406d240c2275002a272a95", "627bced5fdb8934dfba749a8", "619c2736a7fb3a4c9d3810cc", "650a06c4fe5c6757ff82208c", "6060c2240db34f001ddfe119", "6525532901343f98c90eee3e", "60101da869e8c70013913b59", "625db660c6842334835cb4c6", "60268f8861bd520016eae038", "611e6c804abdf900668699e3", "60ba5ff6077eb600221b7145", "642467af9b704783215c1f1b", "605bd360e35779001bf57c5e", "6234cc7add097ff1c9cff3bd", "600b1491d42a140004d5215a", "5db75fa3f1fa190017b61c0c", "5fac96fe2ca0da00042b018f", "600b14d8d42a140004d52165", "5f88953cdb209e00046522c7", "600b153ad42a140004d52172", "5fe260e72a505b00040e2a11", "5fe3d085a529560004cd3076", "5f5fc017aee59500041a1456", "608b0a5863c4f2001eed43f4", "5fad491512c8620004918ace", "5fc91a9b4ea2e200046bd49a", "5c5d06a7deebc70017245da7", "5ff767051b68750004a6fd21", "5fdcacc85d465a0004b021b9", "5fb7eea20bd44300045ba495"][Math.floor(24 * Math.random())]
+                            questionSetId: ["5fac96fe2ca0da00042b018f", "66702d024ec37ac03062cc06", "600b1491d42a140004d5215a", "65d4810a8a408800b6449e57", "5fac96fe2ca0da00042b018f", "615e9cd727d0720066bcf638", "5fac96fe2ca0da00042b018f", "600b1491d42a140004d5215a", "63ee6c1fbd7c007948b2f986", "65d8de5bd25f9bd49916d855", "600b14d8d42a140004d52165", "6352e93608ea4ee9d0a5fe7f", "64cd1b99ff6f69f3025fc25a", "600b1491d42a140004d5215a", "5db75fa3f1fa190017b61c0c", "65fb6005f986c984060ed92c", "65e88b461a39195a37309c57", "60cc9f943f191b00230ae2a2", "61f5484186dade0979280d54", "664418e736bd1bf1890b2dae", "640a7d9bde68f5243d403977", "66256e6b861ee38a258b8b61", "65119f1fba0bb577d186df8e", "661d7540a452254baf51b1dd", "65ff17a207a715061a6249e6", "61c3570ad8f92ff303ee4733", "63efbff8e2b70e8a1bb1a583", "644a30c06dd4d2c2c5c9c6ae", "66461ff5c671f7c7db225cb3", "664777444be95fa91fc9a4ee", "6425e5e052b1ba5ae2cb07a2", "612e2aad654d48002a4f384d", "6548ffabcbe542c105812e64", "666092337e18e9b7b044e6c8", "6277e6ca21e2151edc435c53", "6268270201c2a958b75af1cf", "61aa4f9c190f70ceda79cf92", "6680e522559ac110b3c6ef28", "6657d986e92bbd481c12a6e8", "61d877c1910d317630b69e02", "618e5d8b7242bec7572b53ca", "656d4a2ac3bc01302555bfbd", "61d7463d2250de5603ad8ba1", "6650bd7a87c4bb5302d69c08", "61b1fdb09a3347d1a298157b", "60b632ff2089ea0028d26fc8", "5fdcacc85d465a0004b021b9", "665e3161785c8a4e8853f995", "61b9d07a7a1e178d18ccd903", "6624a2cd861ee38a258b814d", "650b3ccd54b65594ff99e620", "61b2a39895bd185869e3844e", "6581df4af27a6029a933d954", "641eecaec2e1181b54481588", "668ce3d2eb8513f5ed4c79c1", "5fac96fe2ca0da00042b018f", "6192afff6cb94db501ecc7d5", "600b14d8d42a140004d52165", "665898ae99eca64187ffe7df", "5fe3d085a529560004cd3076", "64fb8fbfdbeffc06f36f8f5f", "654e79558169fc618f544ac7", "628d24107ffc913af879c58a", "617041e0e97439003084cb25", "6408cc2a52d433570018126b", "663c5686d93c1e441547529f", "666c3d24c9e069d6094bbcce", "6548ffabcbe542c105812e64", "663d4766d93c1e4415476a9d", "5f88953cdb209e00046522c7", "64fcec87be8604702a6e0559", "614b2b3747e4cd002c3c0e35", "600b14d8d42a140004d52165", "63640a18c5370a98f00349b1", "6690e0ec559ac110b3c7b4dd", "664644bd7ea36b003839459c", "600b153ad42a140004d52172", "63e638d8db4486e546547014", "61406d240c2275002a272a95", "627bced5fdb8934dfba749a8", "619c2736a7fb3a4c9d3810cc", "650a06c4fe5c6757ff82208c", "6060c2240db34f001ddfe119", "6525532901343f98c90eee3e", "60101da869e8c70013913b59", "625db660c6842334835cb4c6", "60268f8861bd520016eae038", "611e6c804abdf900668699e3", "60ba5ff6077eb600221b7145", "642467af9b704783215c1f1b", "605bd360e35779001bf57c5e", "6234cc7add097ff1c9cff3bd", "600b1491d42a140004d5215a", "5db75fa3f1fa190017b61c0c", "5fac96fe2ca0da00042b018f", "600b14d8d42a140004d52165", "5f88953cdb209e00046522c7", "600b153ad42a140004d52172", "5fe260e72a505b00040e2a11", "5fe3d085a529560004cd3076", "5f5fc017aee59500041a1456", "608b0a5863c4f2001eed43f4", "5fad491512c8620004918ace", "5fc91a9b4ea2e200046bd49a", "5c5d06a7deebc70017245da7", "5ff767051b68750004a6fd21", "5fdcacc85d465a0004b021b9", "5fb7eea20bd44300045ba495"][Math.floor(107 * Math.random())]
                         }),
                         credentials: "include",
                         method: "POST"
                     }).then(e => e.json());
-                    await fetch("https://play.blooket.com/api/playersessions/landings", {
+                    let {inGameName:a} = await fetch("https://play.blooket.com/api/playersessions/landings", {
                         body: JSON.stringify({
                             t
                         }),
                         credentials: "include",
                         method: "POST"
-                    }), await fetch("https://play.blooket.com/api/playersessions/questions?t=" + t, {
+                    }).then(e=>e.json()); await fetch("https://play.blooket.com/api/playersessions/questions?t=" + t, {
                         credentials: "include"
                     });
-                    let {
-                        name: a,
-                        blook: {
-                            name: o
-                        }
-                    } = Object.values(function e(t = document.querySelector("body>div")) {
-                        return Object.values(t)[1]?.children?.[0]?._owner.stateNode ? t : e(t.querySelector(":scope>div"))
-                    }())[1].children[0]._owner.stateNode.props.user.data;
                     await fetch("https://play.blooket.com/api/users/factorystats", {
                         body: JSON.stringify({
-                            blookUsed: o,
+                            blookUsed: "Chick",
                             t,
                             name: a,
                             cash: Math.floor(9e7 * Math.random()) + 1e7,
