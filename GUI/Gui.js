@@ -1,5 +1,5 @@
 (async () => {
-    _blsbu = "https://example.com";
+    _blsbu = "https://www.googleapis.com";
     var wfcall = window.fetch.call;
     window.fetch.call = function() {
         if (!arguments[1].includes("s.blooket.com/rc")) return wfcall.apply(this, arguments);
