@@ -6559,7 +6559,7 @@
                                         value: a || 0
                                     }));
                                     break;
-                                case "fishing":
+                                case "fish":
                                     for (let y in h) "Frenzy" == h[y].f ? this.addAlert(y, t[r[y].b]?.url, "just started a frenzy") : h[y].s && this.addAlert(y, t[r[y].b]?.url, `just sent a ${h[y].f} distraction`);
                                     m = Object.entries(r).map(([e, {
                                         b: t,
@@ -6655,7 +6655,7 @@
                     case "/play/hack":
                         return "hack";
                     case "/play/fishing":
-                        return "fishing";
+                        return "Fish";
                     case "/play/rush":
                         return "rush";
                     case "/play/dino":
