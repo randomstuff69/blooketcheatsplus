@@ -952,7 +952,61 @@
                     canOpen: !0
                 }), 200);
             }
-        }, {
+        },{
+    name: "Simulate Pack",
+    description: "Simulates unlocking a pack",
+    inputs: [{
+            name: "Pack",
+            type: "options",
+            options: () => [...document.querySelector("[class*=packsWrapper]")?.children]?.map(e => e.children[0].children[0].alt)
+        }],
+    run: async (packName) => {
+		let i = document.createElement('iframe');
+		document.body.append(i);
+		const alert = i.contentWindow.alert.bind(window);
+		i.remove();
+		if(window.location.pathname!=="/market"){alert("You must be on the market page to run this cheat!");return;}
+        const stateNode = Object.values(document.querySelector("#app>div>div"))[1].children[0]._owner.stateNode;
+        const getProbs = (pack) => (new Promise(res => {
+                if (!Array.prototype.map2) {
+                    Array.prototype.map2 = Array.prototype.map;
+                }
+                Array.prototype.map = function () {
+                    if (typeof this[0]?.[1] == "number") {
+                        res(this);
+                        Array.prototype.map = Array.prototype.map2;
+                    }
+                    return Array.prototype.map2.apply(this, arguments);
+                }
+                var a = new(stateNode.constructor)();
+                a.state.currentPack = pack;
+                a.render();
+                res(null);
+            }));
+        async function pickRandom(pack) {
+            let probs = (await getProbs(pack));
+            const choice = pickW(probs.map(e => e[1]));
+            return probs[choice];
+        }
+        function pickW(a) {
+            let v = 0;
+            let sum = [];
+            const rand = Math.floor(Math.random() * a.reduce((a, b) => a + b, 0));
+            a.forEach(e => (sum.push(v), v += e));
+            return sum.map(e => rand < e).findLastIndex(e => e ? 0 : 1);
+        }
+        stateNode.setState({
+            loadingPack: !1,
+            openPack: !0,
+            unlockedBlook: (await pickRandom(packName))[0],
+            newUnlock: !0,
+            canOpen: !1
+        });
+        setTimeout(() => stateNode.setState({
+                canOpen: !0
+            }), 200);
+    }
+}, {
             name: "Bypass Filter",
             description: "Bypasses the name filter",
             inputs: [{
