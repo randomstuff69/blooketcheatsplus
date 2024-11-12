@@ -269,3 +269,10 @@ The mobile GUI is the first GUI Minesraft2 ever made. Some people said it worked
 * Set Toys Per Question
 * Swap Toys
 </details>
+
+<details><summary><h3>Other cheats</h3></summary>
+
+Blooket Bot: https://blooketbot.glitch.me/
+Blooket Bot Vercel: https://blooketbot.vercel.app/
+Homework editor (probably down): https://blookethwk.glitch.me/
+</details>
