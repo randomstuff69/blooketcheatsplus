@@ -120,9 +120,11 @@ The mobile GUI is the first GUI Minesraft2 ever made. Some people said it worked
 </details>
 
 <details><summary><h3>Other Cheats</h3></summary>
+
 * Blooket Bot: https://blooketbot.glitch.me/
 * Blooket Bot Vercel: https://blooketbot.vercel.app/
 * Homework editor (probably down): https://blookethwk.glitch.me/
+
 </details>
 
 <details><summary><h2>List of Cheats</h2></summary>
