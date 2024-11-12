@@ -5,7 +5,7 @@
         if (!arguments[1].includes("s.blooket.com/rc"))
             return wfcall.apply(this, arguments);
     }
-    if (console.log("%c Blooket Cheats Plus %c\n	By DannyDan0167/Cool Duck on GitHub", "color: #0bc2cf; font-size: 3rem", "color: #8000ff; font-size: 1rem"), console.log("%c	gui.js", "color: #0bc2cf; font-size: 1rem"), console.log("%c	Star the github repo!%c  https://github.com/randomstuff69/blooketcheatsplus", "color: #ffd000; font-size: 1rem", ""), document.querySelector("script[src*='bfs/index.js']") && !window.clearId) {
+    if (console.log("%c Blooket Cheats Plus %c\n	By DannyDan0167/CryptoDude3 on GitHub", "color: #0bc2cf; font-size: 3rem", "color: #8000ff; font-size: 1rem"), console.log("%c	gui.js", "color: #0bc2cf; font-size: 1rem"), console.log("%c	Star the github repo!%c  https://github.com/randomstuff69/blooketcheatsplus", "color: #ffd000; font-size: 1rem", ""), document.querySelector("script[src*='bfs/index.js']") && !window.clearId) {
         for (var e, t, a, o, r, i, n, s, e = document.createElement("iframe"), t = (document.body.appendChild(e), window.clearId = window.setInterval(() => {}, 0)); t--; )
             e.contentWindow.clearInterval.call(window, t);
         e.remove()
@@ -1530,46 +1530,6 @@
                                 document.querySelector("div[class*='headerTextCenter']").innerHTML = `Player Count | ${Object.keys(e.val()?.c)?.length} / ${stateNode.props.client.plus ? 300 : 60}`;
                             });
                     })()
-                }
-            }, {
-                name: "Blooket Bot",
-                description: "Opens Blooket Bot",
-                run: function () {
-                    function getGameCode() {
-                        const appDiv = document.querySelector('#app>div>div');
-                        if (appDiv) {
-                            const reactComponent = Object.values(appDiv)[1]?.children[0]?._owner;
-                            return reactComponent?.stateNode?.props?.client?.hostId || null;
-                        }
-                        return null;
-                    }
-
-                    const gameCode = getGameCode();
-                    const url = gameCode ? "https://blooketbot.glitch.me/?code=" + gameCode : "https://blooketbot.glitch.me/";
-                    window.open(url, "_blank", "width=500,height=500,resizable=yes,scrollbars=yes,status=yes");
-                }
-            }, {
-                name: "Blooket Bot Unblocked",
-                description: "Opens Blooket Bot",
-                run: function () {
-                    function getGameCode() {
-                        const appDiv = document.querySelector('#app>div>div');
-                        if (appDiv) {
-                            const reactComponent = Object.values(appDiv)[1]?.children[0]?._owner;
-                            return reactComponent?.stateNode?.props?.client?.hostId || null;
-                        }
-                        return null;
-                    }
-
-                    const gameCode = getGameCode();
-                    const url = gameCode ? "https://blooketbot.vercel.app/?code=" + gameCode : "https://blooketbot.vercel.app/";
-                    window.open(url, "_blank", "width=500,height=500,resizable=yes,scrollbars=yes,status=yes");
-                }
-            }, {
-                name: "Blooket Homework Editor",
-                description: "Opens Blooket Homework Editor",
-                run: function () {
-                    window.open("https://blookethwk.glitch.me/", "_blank", "width=500,height=500,resizable=yes,scrollbars=yes,status=yes")
                 }
             }, {
                 name: "Lobbychat",
