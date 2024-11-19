@@ -3519,6 +3519,24 @@
                         val: !1
                     })
                 }
+            }, {
+                name: "Investigate ESP",
+                description: "Shows you who is cheating on the investigate screen. Green is clear, and red is cheating.",
+                run: function () {
+                    const stateNode = Object.values(document.querySelector('#app>div>div'))[1].children[0]._owner.stateNode;
+                    let i = document.createElement('iframe');
+                    document.body.append(i);
+                    const alert = i.contentWindow.alert.bind(window);
+                    i.remove();
+                    if (!document.querySelectorAll("[class*='playerContainer']")) {
+                        alert("This must be run on the investigate screen!");
+                    }
+                    Array.from(document.querySelectorAll("[class*='playerContainer']")).forEach(async e => {
+                        const players = await stateNode.props.liveGameController.getDatabaseVal("c");
+                        let p = Object.values(e)?.[0]?.key;
+                        e.style.color = players[p].ic ? "#ff0000" : "#00ff00";
+                    });
+                }
             }
         ],
         doom: [{
