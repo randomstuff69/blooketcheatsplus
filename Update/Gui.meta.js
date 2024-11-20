@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Blooket Cheats Plus
-// @namespace    https://github.com/DannyDan0167/Blooket-Cheats
-// @version      15.4
+// @namespace    https://github.com/randomstuff69/blooketcheatsplus
+// @version      15.4.1
 // @description  Blooket Cheats Plus
-// @updateURL    https://raw.githubusercontent.com/DannyDan0167/Blooket-Cheats-Plus/main/Update/Gui.meta.js
-// @downloadURL  https://raw.githubusercontent.com/DannyDan0167/Blooket-Cheats-Plus/main/GUI/Gui.user.js
-// @author       DannyDan0167
+// @updateURL    https://raw.githubusercontent.com/randomstuff69/blooketcheatsplus/main/Update/Gui.meta.js
+// @downloadURL  https://raw.githubusercontent.com/randomstuff69/blooketcheatsplus/main/GUI/Gui.user.js
+// @author       DannyDan0167 and Cool Duck
 // @match        *://*.blooket.com/*
 // @icon         https://i.ibb.co/sWqBm0K/1024.png
 // @grant        none
