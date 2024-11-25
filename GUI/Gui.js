@@ -6820,7 +6820,389 @@
             c.setItem("theme.contentBackground", e)
         }
     }
-],
+],chat: [{
+    element: l("div", {
+        className: "alertContainer",
+        style: {
+            margin: "15px",
+            backgroundColor: "rgb(0 0 0 / 50%)",
+            width: "95%",
+            height: "370px",
+            borderRadius: "7px",
+            display: "flex",
+            flexDirection: "column",
+            overflow: "hidden",
+            padding: "0px",
+            boxSizing: "border-box"
+        }
+    }, (function() {
+        var j = 0;
+        var container = document.createElement("div");
+        container.style.width = "100%";
+        container.style.height = "100%";
+        container.style.display = "flex";
+        container.style.flexDirection = "column";
+        container.style.position = "relative";
+
+        var chatBox = document.createElement("div");
+        chatBox.className = "chat-box";
+        chatBox.style.flex = "1";
+        chatBox.style.overflow = "auto";
+        chatBox.style.display = "flex";
+        chatBox.style.flexDirection = "column";
+        container.appendChild(chatBox);
+
+        var chatHeader = document.createElement("div");
+        chatHeader.className = "chat-header";
+        chatHeader.textContent = "Chat";
+        chatHeader.style.padding = "5px 10px"; 
+        chatHeader.style.borderBottom = "1px solid #ccc";
+        chatHeader.style.display = "flex";
+        chatHeader.style.justifyContent = "space-between";
+        chatHeader.style.alignItems = "center";
+        chatHeader.style.fontSize = "14px"; 
+        chatBox.appendChild(chatHeader);
+
+        var themeDropdown = document.createElement("select");
+        themeDropdown.style.border = "none";
+        themeDropdown.style.backgroundColor = "#f1f1f1";
+        themeDropdown.style.padding = "3px 5px"; 
+        themeDropdown.style.borderRadius = "5px";
+        themeDropdown.style.cursor = "pointer";
+        themeDropdown.style.fontSize = "14px"; 
+        chatHeader.appendChild(themeDropdown);
+
+        var lightOption = document.createElement("option");
+        lightOption.value = "light";
+        lightOption.textContent = "Light";
+        themeDropdown.appendChild(lightOption);
+
+        var darkOption = document.createElement("option");
+        darkOption.value = "dark";
+        darkOption.textContent = "Dark";
+        themeDropdown.appendChild(darkOption);
+
+        var chatBody = document.createElement("div");
+        chatBody.className = "chat-body";
+        chatBody.style.flex = "1";
+        chatBody.style.overflow = "auto";
+        chatBody.style.padding = "10px";
+        chatBody.style.boxSizing = "border-box";
+        chatBody.style.display = "flex";
+        chatBody.style.flexDirection = "column";
+        chatBox.appendChild(chatBody);
+
+        var chatInput = document.createElement("input");
+        chatInput.type = "text";
+        chatInput.className = "chat-input";
+        chatInput.placeholder = "Type a message...";
+        chatInput.style.border = "1px solid #ccc";
+        chatInput.style.padding = "10px";
+        chatInput.style.boxSizing = "border-box";
+        chatInput.style.width = "100%";
+        chatInput.style.position = "relative";
+        chatInput.style.zIndex = "1";
+        container.appendChild(chatInput);
+
+        function applyTheme(theme) {
+            if (theme === "dark") {
+                chatBox.style.backgroundColor = "#333";
+                chatHeader.style.backgroundColor = "#444";
+                chatBody.style.backgroundColor = "#333";
+                chatBody.style.color = "#fff";
+                chatInput.style.backgroundColor = "#444";
+                chatInput.style.color = "#fff";
+                themeDropdown.style.backgroundColor = "#444";
+                themeDropdown.style.color = "#fff";
+                chatHeader.style.color = "#fff";
+            } else {
+                chatBox.style.backgroundColor = "#fff";
+                chatHeader.style.backgroundColor = "#f1f1f1";
+                chatBody.style.backgroundColor = "#fff";
+                chatBody.style.color = "#000";
+                chatInput.style.backgroundColor = "#fff";
+                chatInput.style.color = "#000";
+                themeDropdown.style.backgroundColor = "#f1f1f1";
+                themeDropdown.style.color = "#000";
+                chatHeader.style.color = "#000";
+            }
+        }
+
+        function loadTheme() {
+            var savedTheme = localStorage.getItem("chatTheme") || "light";
+            applyTheme(savedTheme);
+            themeDropdown.value = savedTheme;
+        }
+
+        themeDropdown.addEventListener("change", function() {
+            var selectedTheme = themeDropdown.value;
+            applyTheme(selectedTheme);
+            localStorage.setItem("chatTheme", selectedTheme);
+        });
+
+        loadTheme(); 
+
+        function reactHandler() {
+            return Object.values(document.querySelector('#app>div>div'))[1].children[0]._owner;
+        }
+
+        function parseCmd(t) {
+            if (t.charAt(0) === "/") {
+                var c = t.split(" ");
+                var cm = c[0].replace("/", "");
+                c.splice(0, 1);
+                return {
+                    cmd: cm,
+                    args: c
+                };
+            } else {
+                return false;
+            }
+        }
+
+        function appendMessage(message) {
+            var messageDiv = document.createElement("div");
+            messageDiv.textContent = message;
+            messageDiv.style.color = "inherit"; 
+            messageDiv.style.marginBottom = "5px";
+            chatBody.appendChild(messageDiv);
+            chatBody.scrollTop = chatBody.scrollHeight; 
+        }
+
+        function sendMessage(message) {
+            if (reactHandler().stateNode.props.client.hostId) {
+                var t = parseCmd(message);
+                if (t) {
+                    switch (t.cmd) {
+                        case "cb":
+                            setBlook(t.args.join(" "));
+                            break;
+                        case "clear":
+                            chatBody.innerHTML = "";
+                            break;
+                        case "dumpstate":
+                            dumpstate();
+                            break;
+                        case "list":
+                            list();
+                            break;
+                        case "tlog":
+                            tsvlog();
+                            break;
+                        case "setval":
+                            setv(t.args);
+                            break;
+                        case "setstate":
+                            setstate(t.args);
+                            break;
+                        case "ahelp":
+                            appendMessage("Advanced Commands: setval(sets val logged by tlog ex /setval b Chicken), tlog(toggles setval log), dumpstate(dumps react state), setstate(sets react state /setstate crypto:5 crypto2:5 etc)");
+                            break;
+                        case "help":
+                            appendMessage("Available Commands: help(gives help), ahelp(advanced commands help), cb(changes blook /cb cow), list(lists players connected), dump(dumps all available info about a player, passwords, etc(/dump player)), clear(clears chat), code(gives game code), unlock(unlocks blook on lobby screen)");
+                            break;
+                        case "dump":
+                            flist(t.args.join(" "));
+                            break;
+                        case "unlock":
+                            unlockBlook(t.args.join(" "));
+                            break;
+                        case "code":
+                            appendMessage("Game Code: " + reactHandler().stateNode.props.client.hostId);
+                            break;
+                        default:
+                            appendMessage("Unrecognized chat command!");
+                            break;
+                    }
+                } else {
+                    try {
+                        reactHandler().stateNode.props.liveGameController.setVal({
+                            id: reactHandler().stateNode.props.client.hostId,
+                            path: "c/" + reactHandler().stateNode.props.client.name + "/msg",
+                            val: {
+                                i: j,
+                                msg: message
+                            }
+                        });
+                        j++;
+                    } catch (error) {
+                        appendMessage("Failed to send message: " + error.message);
+                    }
+                }
+            } else {
+                appendMessage("You must be in a game to chat!");
+            }
+        }
+
+        function dumpstate() {
+            var state = reactHandler().stateNode.state;
+            var stateDump = Object.keys(state).map(e => {
+                var obj = state[e];
+                if (obj != null) {
+                    if (Array.isArray(obj) && typeof obj === "object") {
+                        obj = "[Array]";
+                    }
+                    return e + ":" + obj;
+                } else {
+                    return e + ":N/A";
+                }
+            }).join("; ");
+            appendMessage("DumpState: " + stateDump);
+        }
+
+        function setstate(args) {
+            try {
+                var t = {};
+                args.forEach(e => {
+                    var p = e.split(":");
+                    if (!Number.isNaN(parseInt(p[1]))) {
+                        p[1] = parseInt(p[1]);
+                    }
+                    t[p[0]] = p[1];
+                });
+                reactHandler().stateNode.setState(t);
+                appendMessage("Set State Successful!");
+            } catch (error) {
+                appendMessage("Failed to set state: " + error.message);
+            }
+        }
+
+        function setv(args) {
+            try {
+                reactHandler().stateNode.props.liveGameController.setVal({
+                    path: "c/" + reactHandler().stateNode.props.client.name + "/" + args[0],
+                    val: args.slice(1).join(" ")
+                });
+                appendMessage("SetVal Successful!");
+            } catch (error) {
+                appendMessage("Failed to set value: " + error.message);
+            }
+        }
+
+        function tsvlog() {
+            window.logsv = !window.logsv;
+            appendMessage("SetVal log set to " + (window.logsv ? "Enabled" : "Disabled"));
+        }
+
+        function setBlook(b) {
+            var blooks = webpackJsonp.push([
+                [], {
+                    ['1234']: (_, a, b) => {
+                        a.webpack = b
+                    }
+                },
+                [
+                    ['1234']
+                ]
+            ]).webpack("MDrD").a;
+            b = Object.keys(blooks).find(e => b.toLowerCase() === e.toLowerCase());
+            if (blooks[b]) {
+                appendMessage("Setting blook to " + b + "!");
+                try {
+                    reactHandler().stateNode.props.liveGameController.setVal({
+                        id: reactHandler().stateNode.props.client.hostId,
+                        path: "c/" + reactHandler().stateNode.props.client.name,
+                        val: {
+                            b: b
+                        }
+                    });
+                    reactHandler().stateNode.props.client.blook = b;
+                } catch (error) {
+                    appendMessage("Failed to set blook: " + error.message);
+                }
+            } else {
+                appendMessage("No blook with that name was found!");
+            }
+        }
+
+        function unlockBlook(b) {
+            var blooks = webpackJsonp.push([
+                [], {
+                    ['1234']: (_, a, b) => {
+                        a.webpack = b
+                    }
+                },
+                [
+                    ['1234']
+                ]
+            ]).webpack("MDrD").a;
+            b = Object.keys(blooks).find(e => b.toLowerCase() === e.toLowerCase());
+            if (blooks[b]) {
+                try {
+                    reactHandler().stateNode.state.unlocks.push(b);
+                    reactHandler().stateNode.forceUpdate();
+                } catch (error) {
+                    appendMessage("Failed to unlock blook: " + error.message);
+                }
+            } else {
+                appendMessage("No blook with that name was found!");
+            }
+        }
+
+        function list() {
+            try {
+                reactHandler().stateNode.props.liveGameController.getDatabaseVal("c").then(e => {
+                    appendMessage("Current Players(" + Object.keys(e).length + "): " + Object.keys(e).join(","));
+                });
+            } catch (error) {
+                appendMessage("Failed to list players: " + error.message);
+            }
+        }
+
+        function flist(p) {
+            reactHandler().stateNode.props.liveGameController.getDatabaseVal("c/" + p).then(e => {
+                if (e != null) {
+                    appendMessage("Dump: " + JSON.stringify(e));
+                } else {
+                    appendMessage("Player not found!");
+                }
+            }).catch(error => {
+                appendMessage("Error fetching player info: " + error.message);
+            });
+        }
+
+        chatInput.addEventListener("keydown", function(e) {
+            if (e.key === "Enter") {
+                sendMessage(e.target.value);
+                e.target.value = "";
+            }
+        });
+
+        chatHeader.addEventListener("click", function() {
+            chatBody.classList.toggle("open");
+        });
+
+        function handleChat(e, t) {
+            if (t != null) {
+                if (e.includes("/msg")) {
+                    t?.msg && appendMessage(e.split("/")[2] + ": " + t.msg);
+                }
+            }
+        }
+
+        function setupMessageListener() {
+            try {
+                var liveGameController = reactHandler().stateNode.props.liveGameController;
+                if (liveGameController && liveGameController._liveApp && liveGameController._liveApp.database) {
+                    var originalOnDataUpdate = liveGameController._liveApp.database()._delegate._repoInternal.server_.onDataUpdate_;
+                    liveGameController._liveApp.database()._delegate._repoInternal.server_.onDataUpdate_ = function(e, t, a, n) {
+                        handleChat(e, t);
+                        originalOnDataUpdate(e, t, a, n);
+                    };
+                    appendMessage("Lobbychat successfully loaded!");
+                } else {
+                    appendMessage("Make sure you're in a game!");
+                }
+            } catch (error) {
+                appendMessage("Error setting up message listener: " + error.message);
+            }
+        }
+
+        setupMessageListener(); 
+
+        return container;
+    })())
+}],
 alerts: [{
         element: l("div", {
             className: "alertContainer",
@@ -7276,6 +7658,7 @@ w("Battle Royale", "https://media.blooket.com/image/upload/v1655936179/Media/br/
 w("Blook Rush", "data:image/png;base64,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", C.rush),
 w('<span style="font-size: 18px">Monster Brawl</span>', ['<img style="height: 28px; margin-left: 5px; margin-right: 8px" src="https://media.blooket.com/image/upload/v1655233787/Media/survivor/xp/Blue_xp_2.svg">'], C.brawl),
 w('<span style="font-size: 15px">Santa\'s Workshop</span>', "https://i.ibb.co/Y2SFc9Y/Santa-Workshop-Finished-icon-1.webp", C.workshop),
+w("Chat", "https://i.ibb.co/5Bb7fX0/speech-bubble-xxl-1.webp", C.chat, !0),
 w("Extras", "https://i.ibb.co/mb0R9HX/Star-icon-stylized-svg-1-removebg-preview.png", C.extras, !0),
 w("Settings", "https://i.ibb.co/jrWKgyn/Windows-Settings-icon-1.png", C.settings, !0),
 w("Credits", "https://i.ibb.co/prKYGdN/credits.webp", C.credits, !0),
