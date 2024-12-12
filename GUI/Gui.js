@@ -36,7 +36,7 @@
     let c = {
         data: null,
         setItem(e, t) {
-            return e.split(".").reduce((e, a, o, r) => (e[a]={},++o == r.length && (e[a] = t),e[a]), this.data),
+            return e.split(".").reduce((e, a, o, r) => (e[a]=(e[a]?e[a]:{}),++o == r.length && (e[a] = t),e[a]), this.data),
             localStorage.setItem("JODGUISettings", JSON.stringify(this.data)),
             this.data
         },
