@@ -36,7 +36,7 @@
     let c = {
         data: null,
         setItem(e, t) {
-            return e.split(".").reduce((e, a, o, r) => (++o == r.length && (e[a] = t), e[a]), this.data),
+            return e.split(".").reduce((e, a, o, r) => (e[a]={},++o == r.length && (e[a] = t),e[a]), this.data),
             localStorage.setItem("JODGUISettings", JSON.stringify(this.data)),
             this.data
         },
@@ -308,7 +308,7 @@
                                 display: "flex",
                                 flexDirection: "column"
                             },
-                            innerHTML: '<span style="text-shadow: 1px 1px rgb(0 0 0 / 40%); font-size: 0.8em;">Cheats<sup>v15.4</sup></span>'
+                            innerHTML: '<span style="text-shadow: 1px 1px rgb(0 0 0 / 40%); font-size: 0.8em;">Cheats<sup>v15.5</sup></span>'
                         }, l("a", {
                                 className: "bigButton",
                                 style: {
