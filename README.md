@@ -8,6 +8,7 @@
 ## Todo
 - [ ] Bypass CSP (WIP)
 - [ ] Auto Play (who really wants this?)
+- [x] Crash Game
 - [x] GUI Chat for other cheaters (Crossover with BlooketBot)
 - [x] Anti-Ban (Stuff like daily rewards still get you banned, so don't use it too often. The anti ban only makes the gui undetectable)
 - [x] Use any Banner
