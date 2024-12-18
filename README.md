@@ -13,7 +13,8 @@
 - [x] Use any Banner
 - [x] Change Name ingame
 - [x] In-Game Leaderboard
-- [x] Custom Blooks
+- [x] Crash Game
+- [ ] Custom Blooks (patched) 
 
 
 ## Star History
