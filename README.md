@@ -6,7 +6,6 @@
 <h3 align="center">you can drag this link into the bookmark bar if you dont want to do it manually</h2>
 <h3 align="center"><a href="javascript:(function(){fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e))})();">bcp</a></h2>
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
-
 ## Todo
 - [ ] Bypass CSP (WIP)
 - [ ] Auto Play (who really wants this?)
