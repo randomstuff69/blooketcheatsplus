@@ -6,16 +6,6 @@
 <h3 align="center">you can drag this link into the bookmark bar if you dont want to do it manually</h2>
 <h3 align="center"><a href="javascript:(function(){fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e))})();">bcp</a></h2>
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
-## Todo
-- [ ] Bypass CSP (WIP)
-- [ ] Auto Play (who really wants this?)
-- [x] GUI Chat for other cheaters (Crossover with BlooketBot)
-- [x] Anti-Ban (Stuff like daily rewards still get you banned, so don't use it too often. The anti ban only makes the gui undetectable)
-- [x] Use any Banner
-- [x] Change Name ingame
-- [x] In-Game Leaderboard
-- [x] Crash Game
-- [ ] Custom Blooks (patched) 
 
 
 ## Star History
