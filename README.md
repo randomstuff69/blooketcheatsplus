@@ -3,6 +3,8 @@
 <h3 align="center"><a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats repository</a></h2>
+<h3 align="center">you can drag this link into the bookmark bar if you dont want to do it manually</h2>
+<h3 align="center"><a href="javascript:(function(){fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e))})();">bcp</a></h2>
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
 
 ## Todo
