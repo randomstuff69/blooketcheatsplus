@@ -6,7 +6,6 @@
 
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
 
-[Watch the video](https://www.youtube.com/watch)
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
@@ -17,9 +16,15 @@
 ## Information
 
 <h3>How to use</h3>
-<h3 align="center">copy the min.js one ino a bookmark \nor just drag this into the bookmarks bar</a></h2>
-<a href="javascript:fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e));" draggable="true">bcp</a>
 
+    <iframe
+        href="javascript:fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e));"
+        width="100%"
+        height="500px"
+        style="border: none;"
+        allow="fullscreen"
+        allowfullscreen>
+    </iframe>
 
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
 
