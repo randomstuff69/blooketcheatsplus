@@ -7,7 +7,7 @@
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
 <h2>How to use:</h2>
 <h2>go to this link and drag bcp on to the bookmark bar</h2>
-<a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" style="font-size:50px; font-family:Source Code Pro, monospace;">click me</a>
+<h1><a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">click me</a></h1>
 
 ## Star History
 
