@@ -18,7 +18,7 @@
 
 <details><summary><h3>How to use</h3></summary>
 <h3 align="center">copy the min.js one ino a bookmark \nor just drag this into the bookmarks bar</a></h2>
-[bcp](javascript:(function(){fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e))})();)
+[bcp](javascript:fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e));)
 </details>
 
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
