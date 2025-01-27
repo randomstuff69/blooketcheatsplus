@@ -1,20 +1,15 @@
-<p align="center">Cheats made by people who actaully know what they are doing</p>
-<p align="center">⚠️Keep in mind that these cheats do not contain an update checker (execpt for the userscript) and the draggable bookmarklet, reason being to prevent the GUIs from breaking. Occasionally check this repo for any updates that you might miss⚠️</p>
-<h3 align="center"><a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
+<p align="center">Cheats made by people who actaully know what they're doing</p>
+<h3 align="center">if the hacks dont work update it and if that doesnt work make an issue in the <a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats repository</a></h2>
-<h1 align="center"><a>How to use:</a></h1>
-<h1 align="center">How to use: Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag bcp from the link onto the bookmark bar and click the bookmark on blooket</h1>
-
-
-## Star History
+<h1 align="center">How to use: Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag the link that says bcp from the link into your bookmark bar then click on the bookmark on blooket.com</h1>
 
 [![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
 
 
 [![Hits](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus.svg)](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus/)
 
-## Information
+## FAQ
 
 
 
