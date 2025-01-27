@@ -15,8 +15,7 @@
 
 ## Information
 
-<h3>How to use</h3>
-
+<h3>How to use
     <iframe
         href="javascript:fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e));"
         width="100%"
@@ -25,7 +24,7 @@
         allow="fullscreen"
         allowfullscreen>
     </iframe>
-
+</h3>
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
 
 New and fixed features are in BCP to give you a better experience and an advantage to people who have the orignal gui. Making this better.
