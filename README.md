@@ -1,8 +1,10 @@
 <p align="center">Cheats made by people who actaully know what they're doing</p>
+<h3 align="center">scroll down 🠗</h3>
+<h2 align="center">How to use:</h2>
+<h2 align="center">Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag the link that says bcp from the link into your bookmark bar then
+click on the bookmark on blooket.com</h2>
 
-<h1 align="center">How to use:</h1>
-<h1 align="center">Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag the link that says bcp from the link into your bookmark bar then
-click on the bookmark on blooket.com</h1>
+
 
 <h3 align="center">if the hacks dont work update it and if that doesnt work make an issue in the <a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
