@@ -6,7 +6,7 @@
 
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
 
-
+[Watch the video](https://www.youtube.com/watch)
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
