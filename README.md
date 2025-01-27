@@ -3,8 +3,7 @@
 <h3 align="center"><a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats repository</a></h2>
-<h3 align="center">you can drag this link into the bookmark bar if you dont want to do it manually</h2>
-<h3 align="center"><a href="javascript:(function(){fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e))})();">bcp</a></h2>
+
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
 
 
@@ -18,11 +17,8 @@
 ## Information
 
 <details><summary><h3>How to use</h3></summary>
-
-There are 3 good methods to using these scripts:
-1. Importing one of the Bookmarklets.html files using [these instructions](https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md)
-2. Going to the [GitHub pages site](https://005konz.github.io/Blooket-Cheats/), choosing a gamemode, then dragging a cheat to your bookmarks bar or clicking one to copy the script
-3. Copying a script and running it in the inspect element console
+<h3 align="center">copy the min.js one ino a bookmark \nor just drag this into the bookmarks bar</a></h2>
+[bcp](javascript:(function(){fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e))})();)
 </details>
 
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
