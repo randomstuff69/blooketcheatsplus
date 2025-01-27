@@ -15,16 +15,9 @@
 
 ## Information
 
-<h3>How to use
-    <iframe
-        href="javascript:fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus/GUI/Gui.min.js').then(r=>r.text()).then(eval).catch(e=>console.error('Error:',e));"
-        width="100%"
-        height="500px"
-        style="border: none;"
-        allow="fullscreen"
-        allowfullscreen>
-    </iframe>
-</h3>
+<h3>How to use</h3>
+<iframe src="https://randomstuff69.github.io/blooketcheatsplus/link.html" width="100%" height="790px" frameBorder="0" style="border: 0;"></iframe><a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" target="_blank"></a>
+
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
 
 New and fixed features are in BCP to give you a better experience and an advantage to people who have the orignal gui. Making this better.
