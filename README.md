@@ -7,9 +7,8 @@
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
 <h2>How to use:</h2>
 <h2>go to this link and drag bcp on to the bookmark bar</h2>
-<a href="https://randomstuff69.github.io/blooketcheatsplus/link.html">click me</a>
+<a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" style="font-size:50px; font-family:Source Code Pro, monospace;">click me</a>
 
-<iframe src="https://randomstuff69.github.io/blooketcheatsplus/link.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
