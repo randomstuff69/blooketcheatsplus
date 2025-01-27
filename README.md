@@ -1,13 +1,11 @@
-<p align="center">Cheats made by people who know how to improve something.</p>
-<p align="center">⚠️Keep in mind that these cheats do not contain an update checker (execpt for the userscript), reason being to prevent the GUIs from breaking. Occasionally check this repo for any updates that you might miss⚠️</p>
+<p align="center">Cheats made by people who actaully know what they are doing</p>
+<p align="center">⚠️Keep in mind that these cheats do not contain an update checker (execpt for the userscript) and the draggable bookmarklet, reason being to prevent the GUIs from breaking. Occasionally check this repo for any updates that you might miss⚠️</p>
 <h3 align="center"><a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats repository</a></h2>
+<h1 align="center"><a>How to use:</a></h1>
+<h1 align="center">How to use: Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag bcp from the link onto the bookmark bar and click the bookmark on blooket</h1>
 
-<p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
-<h2>How to use:</h2>
-<h2>go to this link and drag bcp on to the bookmark bar</h2>
-<h1><a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">click me</a></h1>
 
 ## Star History
 
