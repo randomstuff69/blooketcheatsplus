@@ -1,5 +1,5 @@
 <h2 align="center">Cheats made by people who actaully know what they're doing</h2>
-<h1 align="center">scroll down for mor information 🠗</h1>
+<h1 align="center">scroll down for more information 🠗</h1>
 <h2 align="center">How to use:</h2>
 <h2 align="center">Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag the link that says bcp from the link into your bookmark bar then
 click on the bookmark on blooket.com</h2>
