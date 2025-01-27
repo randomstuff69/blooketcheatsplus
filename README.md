@@ -1,23 +1,16 @@
-<p align="center">Cheats made by people who actaully know what they're doing</p>
-<h3 align="center">scroll down 🠗</h3>
+<h2 align="center">Cheats made by people who actaully know what they're doing</h2>
+<h1 align="center">scroll down for mor information 🠗</h1>
 <h2 align="center">How to use:</h2>
 <h2 align="center">Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag the link that says bcp from the link into your bookmark bar then
 click on the bookmark on blooket.com</h2>
+<h3 align="center">if the hacks dont work update them (only if your code doesnt have a jsdelivr link because that is always up to date) and if it IS updated and wont work make an issue in the <a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
+<h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats</a></h2>
 
+<h2 align="center">how to use the userscript:</h2>
+<h2 align="center">put the user.js file in a userscript manager like tampermonkey</h2>
 
-
-<h3 align="center">if the hacks dont work update it and if that doesnt work make an issue in the <a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
-<h3 align="center"><a href="https://github.com/005Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
-<h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats repository</a></h2>
-
-
-[![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
-
-
-[![Hits](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus.svg)](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus/)
 
 ## FAQ
-
 
 
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
@@ -30,22 +23,10 @@ New and fixed features are in BCP to give you a better experience and an advanta
 Try <a href="https://blooketbot.glitch.me/">https://blooketbot.glitch.me/</a>
 </details>
 
-<details><summary><h3>What can I do if Github is blocked?</h3></summary>
-
-No problem! Here are the links to go:
-https://cdn.jsdelivr.net/gh/dannydan0167/Blooket-Cheats-Plus/(gui folder)/(gui)
-or
-<a href="https://cocalc.com/github/dannydan0167/Blooket-Cheats-Plus">Cocalc</a> 
-</details>
-
-<details><summary><h3>(script) is not working?</h3></summary>
-
-Make sure you're running it properly (see [How to use](https://gitlab.com/blooket/blooket-cheats/-/tree/main/tutorial?ref_type=heads)), if it still doesn't work and other cheats do, then [make an issue](https://github.com/DannyDan0167/Blooket-Cheats-Plus)
-</details>
 
 <details><summary><h3>Which script should I use to make a bookmarklet?</h3></summary>
 
-You should use the scripts ending in ".min.js", as using the others will have errors due to formatting.
+link.html if you dragged it into the bookmark bar, if you didnt You should use the scripts ending in ".min.js", as using the others will have errors due to formatting.
 </details>
 
 <details><summary><h3>Can you give me infinite tokens / bypass daily limit / permanently give me blooks / change pack luck?</h3></summary>
@@ -53,15 +34,9 @@ You should use the scripts ending in ".min.js", as using the others will have er
 No, these are things we would've already done if they were possible, they're managed on the backend of Blooket so we can't modify them
 </details>
 
-<details><summary><h3>Who made/got those custom blooks in the get more blooks hack?</h3></summary>
-
-The majority of those blooks are from Blacket and Pixelit, the rest were made from iBlooket, applesaucy411 (Reddit), DDragonYT (Reddit), Cerulean_MC (Reddit), and gengarfromfnaf (Discord). Ploopit Blooks are coming soon! maybe triangulet... (slim chance)
-</details>
-
-
 <details><summary><h3>Can you make hacks for (game)</h3></summary>
 
-I already have gimkit and kahoot hacks listed on my profile.
+no
 </details>
 
 <details><summary><h3>Can you make more Battle Royale cheats</h3></summary>
@@ -263,3 +238,7 @@ The mobile GUI is the first GUI Minesraft2 ever made. Some people said it worked
 * Set Toys Per Question
 * Swap Toys
 </details>
+[![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
+
+
+[![Hits](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus.svg)](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus/)
