@@ -7,7 +7,7 @@ click on the bookmark on blooket.com</h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats</a></h2>
 
 <h2 align="center">how to use the userscript:</h2>
-<h2 align="center">put the user.js file in a userscript manager like tampermonkey</h2>
+<h2 align="center">go to the user.js file and click raw and it will prompt your userscript manager to install the script</h2>
 
 
 ## FAQ
