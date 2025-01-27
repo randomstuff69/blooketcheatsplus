@@ -5,6 +5,10 @@
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats repository</a></h2>
 
 <p align="center">⚠️All host cheats are for HOST ONLY⚠️</p>
+<h2>How to use:</h2>
+<h2>go to this link and drag bcp on to the bookmark bar</h2>
+[click me](https://randomstuff69.github.io/blooketcheatsplus/link.html)
+
 
 ## Star History
 
@@ -15,8 +19,7 @@
 
 ## Information
 
-<h3>How to use</h3>
-<iframe src="https://randomstuff69.github.io/blooketcheatsplus/link.html" width="100%" height="790px" frameBorder="0" style="border: 0;"></iframe><a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" target="_blank"></a>
+
 
 <details><summary><h3>What's the difference between BCP and the original cheats?</h3></summary>
 
