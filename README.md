@@ -1,13 +1,12 @@
 <h2 align="center">Cheats made by people who actaully know what they're doing</h2>
 <h1 align="center">scroll down for more information 🠗</h1>
 <h2 align="center">How to use:</h2>
-<h2 align="center">Go to <a href="https://randomstuff69.github.io/blooketcheatsplus/link.html" font-family="Source Code Pro">this link </a>and drag the link that says bcp from the link into your bookmark bar then
-click on the bookmark on blooket.com</h2>
+
 <h3 align="center">if the hacks dont work update them (only if your code doesnt have a jsdelivr link because that is always up to date) and if it IS updated and wont work make an issue in the <a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats</a></h2>
 
 <h2 align="center">how to use the userscript:</h2>
-<h2 align="center">go to the user.js file and click raw and it will prompt your userscript manager to install the script</h2>
+<h2 align="center">click <a href="https://github.com/randomstuff69/blooketcheatsplus/raw/refs/heads/main/GUI/Gui.user.js" font-family="Source Code Pro">this link </a>and it should prompt your userscript manager to download</h2>
 
 
 ## FAQ
