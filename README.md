@@ -4,6 +4,8 @@
 
 <h3 align="center">if the hacks dont work update them (only if your code doesnt have a jsdelivr link because that is always up to date) and if it IS updated and wont work make an issue in the <a href="https://discord.gg/8A6J234n7v">Discord Server</a></h2>
 <h3 align="center"><a href="https://github.com/Blooket-Council/Blooket-Cheats">Original Offical Blooket Cheats</a></h2>
+<h3 align="center">randomstuff69 is the real account on greasy fork</h2>
+
 
 <h2 align="center">how to use the userscript:</h2>
 <h2 align="center">click <a href="https://github.com/randomstuff69/blooketcheatsplus/raw/refs/heads/main/GUI/Gui.user.js" font-family="Source Code Pro">this link </a>and it should prompt your userscript manager to download</h2>
