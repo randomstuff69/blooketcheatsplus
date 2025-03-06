@@ -1,4 +1,5 @@
-  let run = 0;
+(async ()=>{
+let run = 0;
 let lastSend = Date.now();
 const csurl = [...document.querySelectorAll("link")].filter(e => e.href.includes("colyseus-"))[0].href;
 const colyseus = await import(csurl);
@@ -267,4 +268,4 @@ function refreshPlayers() {
 getPlayers().forEach(e => { drawPlayerRect(e); drawPlayerLine(e); addPosListener(e); });
 getTargets().forEach(e => { drawTargetRect(e); drawTargetLine(e); });
 getPowerups().forEach(e => { drawPowerupRect(e); drawPowerupLine(e); });
-addPosListener(localPlayer);
+addPosListener(localPlayer);})();
