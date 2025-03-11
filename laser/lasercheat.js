@@ -1,4 +1,4 @@
-//(async ()=>{
+(async ()=>{
 let run = 0;
 let lastSend = Date.now();
 let lastMouseSend = Date.now();
@@ -323,4 +323,4 @@ getPlayers().forEach(e => { drawPlayerRect(e); drawPlayerLine(e); addPosListener
 getTargets().forEach(e => { drawTargetRect(e); drawTargetLine(e); });
 getPowerups().forEach(e => { drawPowerupRect(e); drawPowerupLine(e); });
 addPosListener(localPlayer);
-//})();
+})();
