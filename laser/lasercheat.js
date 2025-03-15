@@ -37,7 +37,7 @@ function runCheat() {
           playerAngle = angle(getLowestDistance(players, localp), localp);
         }
       }
-      if (Date.now() - lastMouseSend > 10) { room.send("playerMouseUpdate", { mouseAngle: playerAngle }); lastMouseSend = Date.now(); }
+      room.send("playerMouseUpdate", { mouseAngle: playerAngle }); lastMouseSend = Date.now();
       if (Date.now() - lastSend > 50) { room.send("playerMouseUpdate", { mouseAngle: playerAngle }); room.send("playerMouseClick", null); lastSend = Date.now(); }
     }
   }); run = 1;
