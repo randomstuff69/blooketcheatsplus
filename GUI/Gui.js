@@ -999,7 +999,7 @@
                         return
                     }
                     var a,
-                        o = i().props.liveGameController._liveGameCode,
+                        o = i().props.client.hostId,
                         r = parseInt(t);
                     if (!r) {
                         alert("You must use a valid number!");
@@ -1710,7 +1710,7 @@
                         c.apply(this, arguments),
                             d.apply(this, arguments)
                     },
-                    e().stateNode.props.liveGameController._liveApp.database().ref(`${e().stateNode.props.liveGameController._liveGameCode}`).on("value", e => {}),
+                    e().stateNode.props.liveGameController._liveApp.database().ref(`${e().stateNode.props.client.hostId}`).on("value", e => {}),
                     s("Lobbychat successfully loaded!"),
                     o.style.wordWrap = "break-word"
             }
@@ -5862,7 +5862,7 @@
                     orgsv.apply(this, arguments);
                 };
 
-                reactHandler().stateNode.props.liveGameController._liveApp.database().ref(`${reactHandler().stateNode.props.liveGameController._liveGameCode}`).on("value", e => {});
+                reactHandler().stateNode.props.liveGameController._liveApp.database().ref(`${reactHandler().stateNode.props.client.hostId}`).on("value", e => {});
                 a("Lobbychat successfully loaded!");
 
                 function app() {
@@ -7221,8 +7221,10 @@
             async connect() {
                 try {
                     var e = Object.values(document.querySelector("#app>div>div"))[1].children[0]._owner.stateNode;
-                    if (!e?.props?.liveGameController?._liveGameCode)
+                    let app = (await e.props.liveGameController.getDatabaseRef())?.database?.app;
+                    if (!app)
                         return !1;
+                    e.props.liveGameController._liveApp = app;
                     this.connection = await e.props.liveGameController.getDatabaseRef("");
                     let t = "Cow",
                         a = this.getGamemode(),
