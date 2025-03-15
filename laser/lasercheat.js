@@ -10,7 +10,7 @@ const csurl = [...document.querySelectorAll("link")].filter(e => e.href.includes
 const colyseus = await import(csurl);
 let sendfunc = colyseus.a().Room.prototype.send;
 window.room = undefined;
-colyseus.a().Room.prototype.send = function (a) { window.room = this; if (run < 1) { runCheat(); } if (options.freeCam) { if (a == "playerMoveInput") { return; } } return sendfunc.apply(this, arguments); };
+colyseus.a().Room.prototype.send = function (a) { window.room = this; if (run < 1) { runCheat(); } if(options.autoShoot && a == "playerMouseUpdate"){return;} if (options.freeCam) { if (a == "playerMoveInput") { return; } } return sendfunc.apply(this, arguments); };
 function runCheat() {
   addPowerupListener();
   addAutoAnswerListeners();
@@ -37,7 +37,7 @@ function runCheat() {
           playerAngle = angle(getLowestDistance(players, localp), localp);
         }
       }
-      room.send("playerMouseUpdate", { mouseAngle: playerAngle }); lastMouseSend = Date.now();
+      sendfunc.apply(room,["playerMouseUpdate", { mouseAngle: playerAngle }]); lastMouseSend = Date.now();
       if (Date.now() - lastSend > 50) { room.send("playerMouseUpdate", { mouseAngle: playerAngle }); room.send("playerMouseClick", null); lastSend = Date.now(); }
     }
   }); run = 1;
