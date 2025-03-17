@@ -1772,17 +1772,6 @@
                     }))
             }
         }, {
-            name: "Remove Name Limit",
-            description: "Sets the name limit to 120, which is the actual max name length limit",
-            run: function() {
-                var e = document.createElement("iframe");
-                document.body.append(e),
-                    window.alert = e.contentWindow.alert.bind(window),
-                    e.remove(),
-                    document.querySelector('input[class*="nameInput"]').maxLength = 120,
-                    alert("Removed name length limit")
-            }
-        }, {
             name: "Remove Random Name",
             description: "Allows you to put a custom name",
             run: function() {
