@@ -315,7 +315,7 @@
     function addPosListener(player) {
       if (player.container.setPosition2) { return; }
       player.container.setPosition2 = player.container.setPosition;
-      player.container.setPosition = function () { onPosUpdate(); player.container.setPosition2.apply(this, arguments); onPosUpdate(); }
+      player.container.setPosition = function () { player.container.setPosition2.apply(this, arguments); onPosUpdate(); }
       console.log(window.room);
       //if (room) { addColyseusPosListener(player); }
     }
