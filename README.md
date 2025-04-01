@@ -37,7 +37,7 @@ No, these are things we would've already done if they were possible, they're man
 
 <details><summary><h3>Can you make hacks for (game)</h3></summary>
 
-no
+If there isn't a hack for it currently, it's most likely is impossible.
 </details>
 
 <details><summary><h3>Can you make more Battle Royale cheats</h3></summary>
@@ -239,7 +239,15 @@ The mobile GUI is the first GUI Minesraft2 ever made. Some people said it worked
 * Set Toys Per Question
 * Swap Toys
 </details>
-[![Star History Chart](https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date)](https://star-history.com/#randomstuff69/blooketcheatsplus&Date)
+## Star History
 
+<a href="https://www.star-history.com/#randomstuff69/blooketcheatsplus&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=randomstuff69/blooketcheatsplus&type=Date" />
+ </picture>
+</a>
 
 [![Hits](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus.svg)](https://hits.sh/github.com/DannyDan0167/Blooket-Cheats-Plus/)
+
